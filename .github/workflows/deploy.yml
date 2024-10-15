@@ -8,17 +8,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v4
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - name: Create config.js    
+    - name: Create config.js
       run: |
         echo "const config = { NEWS_API_KEY: '${{ secrets.NEWS_API_KEY }}' };" > config.js
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        publish_dir: .
+    - name: Deploy to GitHub Pages
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Deploy to GitHub Pages"
+        git push --force origin main:gh-pages
