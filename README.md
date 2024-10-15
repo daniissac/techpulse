@@ -19,7 +19,6 @@ cd techpulse
 3. Create a `config.js` file in the root directory with your News API key:
 
 ```
-javascript
 const config = {
   NEWS_API_KEY: 'your-api-key-here'
 };
