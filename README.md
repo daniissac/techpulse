@@ -51,5 +51,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 News data provided by **News API**
-
+Icons from **FontAwesome**
 
