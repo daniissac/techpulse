@@ -50,6 +50,6 @@ For major changes, please open an issue first to discuss what you would like to 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-News data provided by **News API**
-Icons from **FontAwesome**
-**Axios** -  Npm package for HTTP API calls
+- News data provided by **News API**
+- Icons from **FontAwesome**
+- **Axios** -  Npm package for HTTP API calls
